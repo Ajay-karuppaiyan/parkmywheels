@@ -26,12 +26,18 @@ export default function Header() {
                     <Link className="nav-link" href="/services">Services</Link>
                   </li>
                   <li className="nav-item submenu">
-                    <Link className="nav-link" href="#">Contact Us</Link>
+                    <Link className="nav-link" href="/contact">Contact Us</Link>
                     <ul>
                       <li className="nav-item">
                         <Link className="nav-link" href="/contact">Contact Us</Link>
                       </li>
-                    </ul>
+                    </ul> 
+                  </li>
+                  <li className="nav-item">
+                    <Link className="nav-link" href="/parker">Parker</Link>
+                  </li>
+                  <li className="nav-item">
+                    <Link className="nav-link" href="/vendor">Vendor</Link>
                   </li>
                 </ul>
               </div>

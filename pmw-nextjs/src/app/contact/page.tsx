@@ -62,6 +62,17 @@ export default function Contact() {
                       <div className="booking-form-group col-md-6 mb-4">
                         <input type="email" name="email" className="booking-form-control" placeholder="Enter Your Email" required />
                       </div>
+                      <div className="booking-form-group col-md-6 mb-4">
+                        <input type="text" name="phone" className="booking-form-control" placeholder="Enter Your Number" required />
+                      </div>
+                      <div className="booking-form-group col-md-6 mb-4">
+                        <select name="vehicletype" className="booking-form-control form-select" required defaultValue="">
+                          <option value="" disabled>Choose Vehicle Type</option>
+                          <option value="Car">Car</option>
+                          <option value="Bike">Bike</option>
+                          <option value="Others">Others</option>
+                        </select>
+                      </div>
                       <div className="col-md-12 booking-form-group">
                         <button type="submit" className="btn-default">Submit Details</button>
                       </div>

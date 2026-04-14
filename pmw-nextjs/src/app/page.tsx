@@ -383,7 +383,7 @@ export default function Home() {
       </div>
 
       {/* Why Choose Us */}
-      <div className="why-choose-us py-5">
+      <div className="why-choose-us">
         <div className="container">
           <div className="row section-row text-center mb-5">
             <div className="col-lg-12">
@@ -395,13 +395,13 @@ export default function Home() {
             </div>
           </div>
           <div className="row align-items-center">
-             <div className="col-lg-4 col-md-6 order-lg-1 order-md-1 order-1 text-lg-end text-start">
-                <div className="why-choose-item wow fadeInUp mb-5">
-                  <div className="icon-box ms-lg-auto ms-0 mb-3"><img src="/images/icon-why-choose-1.svg" alt="" /></div>
+             <div className="col-lg-4 col-md-6 order-lg-1 order-md-1 order-1">
+                <div className="why-choose-item wow fadeInUp mb-4 d-flex text-start">
+                  <div className="icon-box ms-lg-3 ms-0 mb-3"><img src="/images/icon-why-choose-1.svg" alt="" /></div>
                   <div className="why-choose-content"><h3>extensive parking options</h3><p>From private lots to commercial hubs, we offer a wide range of parking choices.</p></div>
                 </div>
-                <div className="why-choose-item wow fadeInUp" data-wow-delay="0.25s">
-                  <div className="icon-box ms-lg-auto ms-0 mb-3"><img src="/images/icon-why-choose-2.svg" alt="" /></div>
+                <div className="why-choose-item wow fadeInUp d-flex text-start" data-wow-delay="0.25s">
+                  <div className="icon-box ms-lg-3 ms-0 mb-3"><img src="/images/icon-why-choose-2.svg" alt="" /></div>
                   <div className="why-choose-content"><h3>exceptional customer service</h3><p>Need help? Our friendly support team is always ready to assist you.</p></div>
                 </div>
              </div>

@@ -13,6 +13,7 @@
         }
         
         /* Slick Menu JS */
+        $('.responsive-menu').empty();
         $('#menu').slicknav({
             label : '',
             prependTo : '.responsive-menu'

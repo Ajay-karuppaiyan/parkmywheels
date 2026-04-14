@@ -137,23 +137,23 @@ export default function About() {
             <div className="col-lg-12">
               <div className="section-title">
                 <h3 className="wow fadeInUp">watch our video</h3>
-                <h2 className="text-anime-style-3">What sets us apart</h2>
+                <h2 className="text-anime-style-3">Discover what sets us apart in the vehicle parking industry</h2>
               </div>
             </div>
           </div>
           <div className="row align-items-center">
              <div className="col-lg-4 col-md-5">
-                <div className="customer-counter-item p-4 text-center bg-white shadow rounded mb-4 mb-lg-0">
-                   <div className="customer-counter-image mb-3"><img src="/images/video-counter-img-1.jpg" alt="" className="rounded img-fluid" /></div>
+                <div className="customer-counter-item">
+                   <div className="customer-counter-image"><img src="/images/video-counter-img-1.jpg" alt="" /></div>
                    <div className="satisfied-customer-counter"><h3><span className="counter">3100</span>+</h3><p>satisfied customer</p></div>
-                   <div className="satisfied-customer-image mt-3"><img src="/images/satisfied-customer-img.png" alt="" className="img-fluid" /></div>
+                   <div className="satisfied-customer-image"><img src="/images/satisfied-customer-img.png" alt="" /></div>
                 </div>
              </div>
              <div className="col-lg-8 col-md-7">
-                <div className="video-image-box position-relative">
-                   <figure className="image-anime reveal"><img src="/images/video-counter-img-2.jpg" alt="" className="img-fluid rounded shadow" /></figure>
-                   <div className="video-image-play-button position-absolute top-50 start-50 translate-middle">
-                      <a href="https://www.youtube.com/watch?v=Y-x0efG1seA" className="popup-video btn-default" style={{ padding: '25px' }}><i className="fa-solid fa-play fa-xl"></i></a>
+                <div className="video-image-box">
+                   <div className="video-image"><figure className="image-anime"><img src="/images/video-counter-img-2.jpg" alt="" /></figure></div>
+                   <div className="video-image-play-button">
+                      <a href="https://www.youtube.com/watch?v=Y-x0efG1seA" className="popup-video"><i className="fa-solid fa-play"></i></a>
                    </div>
                 </div>
              </div>
@@ -162,7 +162,7 @@ export default function About() {
       </div>
 
       {/* Why Choose Us */}
-      <div className="why-choose-us py-5">
+      <div className="why-choose-us">
         <div className="container">
           <div className="row section-row text-center mb-5">
             <div className="col-lg-12">
@@ -170,13 +170,13 @@ export default function About() {
             </div>
           </div>
           <div className="row align-items-center">
-             <div className="col-lg-4 col-md-6 order-lg-1 order-md-1 order-1 text-lg-end text-start">
-                <div className="why-choose-item wow fadeInUp mb-4">
-                  <div className="icon-box ms-lg-auto ms-0 mb-3"><img src="/images/icon-why-choose-1.svg" alt="" /></div>
+             <div className="col-lg-4 col-md-6 order-lg-1 order-md-1 order-1">
+                <div className="why-choose-item wow fadeInUp mb-4 d-flex text-start">
+                  <div className="icon-box ms-lg-3 ms-0 mb-3"><img src="/images/icon-why-choose-1.svg" alt="" /></div>
                   <div className="why-choose-content"><h3>extensive parking options</h3><p>From private lots to commercial hubs, we offer a wide range of choices.</p></div>
                 </div>
-                <div className="why-choose-item wow fadeInUp" data-wow-delay="0.25s">
-                  <div className="icon-box ms-lg-auto ms-0 mb-3"><img src="/images/icon-why-choose-2.svg" alt="" /></div>
+                <div className="why-choose-item wow fadeInUp d-flex text-start" data-wow-delay="0.25s">
+                  <div className="icon-box ms-lg-3 ms-0 mb-3"><img src="/images/icon-why-choose-2.svg" alt="" /></div>
                   <div className="why-choose-content"><h3>exceptional customer service</h3><p>Friendly support team always ready to assist you.</p></div>
                 </div>
              </div>
