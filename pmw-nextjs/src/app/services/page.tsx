@@ -59,23 +59,29 @@ export default function Services() {
       </div>
 
       {/* Testimonials */}
-      <div className="our-testimonial py-5 bg-light">
-        <div className="container text-center">
-          <h3 className="wow fadeInUp">testimonials</h3>
-          <h2 className="text-anime-style-3" data-cursor="-opaque">What our customers are saying about us</h2>
-          <div className="testimonial-slider mt-5">
+      <div className="our-testimonial py-5">
+        <div className="container">
+          <div className="row section-row text-center mb-5">
+            <div className="col-lg-12">
+              <div className="section-title">
+                <h3 className="wow fadeInUp">testimonials</h3>
+                <h2 className="text-anime-style-3">What our customers are saying about us</h2>
+              </div>
+            </div>
+          </div>
+          <div className="testimonial-slider">
             <div className="swiper">
               <div className="swiper-wrapper">
                 {testimonials.map((t, i) => (
                   <div className="swiper-slide" key={i}>
-                    <div className="testimonial-item p-4 shadow bg-white rounded text-start">
-                       <div className="testimonial-header mb-3">
+                    <div className="testimonial-item p-4 shadow bg-white rounded text-start h-100 d-flex flex-column">
+                       <div className="testimonial-header mb-4">
                           <div className="testimonial-rating text-warning mb-2"><i className="fa-solid fa-star"></i><i className="fa-solid fa-star"></i><i className="fa-solid fa-star"></i><i className="fa-solid fa-star"></i><i className="fa-solid fa-star"></i></div>
                           <div className="testimonial-content"><p>{t.text}</p></div>
                        </div>
-                       <div className="testimonial-body d-flex align-items-center">
-                          <div className="author-image me-3"><figure className="image-anime"><img src={`/images/${t.img}`} alt="" className="rounded-circle" width="60" /></figure></div>
-                          <div className="author-content"><h3>{t.name}</h3><p className="mb-0 text-muted">{t.role}</p></div>
+                       <div className="testimonial-body d-flex align-items-center mt-auto">
+                          <div className="author-image me-3"><figure className="image-anime rounded-circle overflow-hidden shadow-sm" style={{ width:'60px', height:'60px' }}><img src={`/images/${t.img}`} alt="" className="img-fluid" /></figure></div>
+                          <div className="author-content"><h3>{t.name}</h3><p className="mb-0 text-muted small">{t.role}</p></div>
                        </div>
                     </div>
                   </div>

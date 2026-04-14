@@ -170,24 +170,24 @@ export default function About() {
             </div>
           </div>
           <div className="row align-items-center">
-             <div className="col-lg-4 col-md-6">
+             <div className="col-lg-4 col-md-6 order-lg-1 order-md-1 order-1 text-lg-end text-start">
                 <div className="why-choose-item wow fadeInUp mb-4">
-                  <div className="icon-box"><img src="/images/icon-why-choose-1.svg" alt="" /></div>
+                  <div className="icon-box ms-lg-auto ms-0 mb-3"><img src="/images/icon-why-choose-1.svg" alt="" /></div>
                   <div className="why-choose-content"><h3>extensive parking options</h3><p>From private lots to commercial hubs, we offer a wide range of choices.</p></div>
                 </div>
                 <div className="why-choose-item wow fadeInUp" data-wow-delay="0.25s">
-                  <div className="icon-box"><img src="/images/icon-why-choose-2.svg" alt="" /></div>
+                  <div className="icon-box ms-lg-auto ms-0 mb-3"><img src="/images/icon-why-choose-2.svg" alt="" /></div>
                   <div className="why-choose-content"><h3>exceptional customer service</h3><p>Friendly support team always ready to assist you.</p></div>
                 </div>
              </div>
-             <div className="col-lg-4 d-none d-lg-block text-center"><figure className="reveal"><img src="/images/why-choose-img.jpg" alt="" className="img-fluid rounded shadow" /></figure></div>
-             <div className="col-lg-4 col-md-6">
+             <div className="col-lg-4 col-md-12 text-center order-lg-2 order-md-3 order-2"><div className="why-choose-image mb-4 mb-lg-0"><figure className="reveal"><img src="/images/why-choose-img.jpg" alt="" className="img-fluid rounded shadow" /></figure></div></div>
+             <div className="col-lg-4 col-md-6 order-lg-3 order-md-2 order-3 text-start">
                 <div className="why-choose-item wow fadeInUp">
-                  <div className="icon-box"><img src="/images/icon-why-choose-3.svg" alt="" /></div>
+                  <div className="icon-box mb-3"><img src="/images/icon-why-choose-3.svg" alt="" /></div>
                   <div className="why-choose-content"><h3>convenient locations</h3><p>Find parking in prime locations, making your trips more efficient.</p></div>
                 </div>
                 <div className="why-choose-item wow fadeInUp mt-4" data-wow-delay="0.25s">
-                  <div className="icon-box"><img src="/images/icon-why-choose-4.svg" alt="" /></div>
+                  <div className="icon-box mb-3"><img src="/images/icon-why-choose-4.svg" alt="" /></div>
                   <div className="why-choose-content"><h3>reliability and safety</h3><p>Secure and well-maintained spots ensure peace of mind.</p></div>
                 </div>
              </div>
@@ -204,7 +204,7 @@ export default function About() {
               <div className="swiper-wrapper">
                 {testimonials.map((t, i) => (
                   <div className="swiper-slide" key={i}>
-                    <div className="testimonial-item p-4 shadow bg-white rounded text-start h-100">
+                    <div className="testimonial-item p-4 shadow bg-white rounded text-start h-100 d-flex flex-column">
                        <div className="testimonial-header mb-4">
                           <div className="testimonial-rating text-warning mb-2"><i className="fa-solid fa-star"></i><i className="fa-solid fa-star"></i><i className="fa-solid fa-star"></i><i className="fa-solid fa-star"></i><i className="fa-solid fa-star"></i></div>
                           <div className="testimonial-content"><p>{t.text}</p></div>
