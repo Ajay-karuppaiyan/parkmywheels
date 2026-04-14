@@ -22,28 +22,29 @@ export default function Header() {
                   <li className="nav-item">
                     <Link className="nav-link" href="/about">About Us</Link>
                   </li>
-                  <li className="nav-item">
-                    <Link className="nav-link" href="/services">Services</Link>
-                  </li>
                   <li className="nav-item submenu">
-                    <Link className="nav-link" href="/contact">Contact Us</Link>
+                    <Link className="nav-link" href="#">Parking Services</Link>
                     <ul>
-                      <li className="nav-item">
-                        <Link className="nav-link" href="/contact">Contact Us</Link>
-                      </li>
+                      <li className="nav-item"><Link className="nav-link" href="/pay-and-park">Pay & Park</Link></li>
+                      <li className="nav-item"><Link className="nav-link" href="/subscription">Monthly Subscription</Link></li>
+                      <li className="nav-item"><Link className="nav-link" href="/valet-parking">Valet Parking</Link></li>
+                      <li className="nav-item"><Link className="nav-link" href="/services">All Services</Link></li>
                     </ul> 
                   </li>
                   <li className="nav-item">
-                    <Link className="nav-link" href="/parker">Parker</Link>
+                    <Link className="nav-link" href="/rent-park-and-earn">Rent Park & Earn</Link>
                   </li>
                   <li className="nav-item">
-                    <Link className="nav-link" href="/vendor">Vendor</Link>
+                    <Link className="nav-link" href="/parking-business">Parking Business</Link>
+                  </li>
+                  <li className="nav-item">
+                    <Link className="nav-link" href="/blogs">Posts & Blogs</Link>
                   </li>
                 </ul>
               </div>
-              {/* Enquire Now Button */}
+              {/* Explore App Button */}
               <div className="header-btn d-inline-flex">
-                <a href="#bookingform1" className="btn-default popup-with-form">Enquire Now</a>
+                <a href="#bookingform1" className="btn-default popup-with-form">Explore App</a>
               </div>
             </div>
             {/* Main Menu End */}

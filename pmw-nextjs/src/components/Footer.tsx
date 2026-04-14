@@ -11,6 +11,12 @@ export default function Footer() {
                 <div className="footer-logo"><img src="/images/parkmywheels%20-%20TM%20logo%20-%20light.png" alt="" style={{ maxWidth: '160px' }} /></div>
                 <div className="about-footer-content">
                   <p>Experience the convenience and ease of parking a vehicle with ParkMyWheels.</p>
+                  <ul className="footer-social-links mt-3 list-unstyled d-flex">
+                    <li className="me-3"><a href="#" className="text-white"><i className="fa-brands fa-facebook-f"></i></a></li>
+                    <li className="me-3"><a href="#" className="text-white"><i className="fa-brands fa-twitter"></i></a></li>
+                    <li className="me-3"><a href="#" className="text-white"><i className="fa-brands fa-instagram"></i></a></li>
+                    <li className="me-3"><a href="#" className="text-white"><i className="fa-brands fa-linkedin-in"></i></a></li>
+                  </ul>
                 </div>
               </div>
             </div>
@@ -34,9 +40,10 @@ export default function Footer() {
                   <li><Link href="/">home</Link></li>
                   <li><Link href="/about">about us</Link></li>
                   <li><Link href="/services">services</Link></li>
+                  <li><Link href="/rent-park-and-earn">rent park & earn</Link></li>
+                  <li><Link href="/parking-business">parking business</Link></li>
+                  <li><Link href="/blogs">posts & blogs</Link></li>
                   <li><Link href="/contact">contact us</Link></li>
-                  <li><Link href="/parker">parker</Link></li>
-                  <li><Link href="/vendor">vendor</Link></li>
                 </ul>
               </div>
             </div>
