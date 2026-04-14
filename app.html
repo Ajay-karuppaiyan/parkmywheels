@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Redirecting to ParkMyWheels App</title>
+  <script>
+    function redirectToAppStore() {
+      const userAgent = navigator.userAgent || navigator.vendor || window.opera;
+
+      // Check for iOS
+      if (/iPad|iPhone|iPod/.test(userAgent) && !window.MSStream) {
+        window.location.href = "https://apps.apple.com/in/app/parkmywheels/id6745809692";
+      }
+      // Check for Android
+      else if (/android/i.test(userAgent)) {
+        window.location.href = "https://play.google.com/store/apps/details?id=com.park.mywheels";
+      }
+      // Optional: fallback if not a mobile device
+      else {
+        document.getElementById("fallback").style.display = "block";
+      }
+    }
+
+    window.onload = redirectToAppStore;
+  </script>
+</head>
+<body>
+  <p>Redirecting you to the ParkMyWheels app...</p>
+  <p id="fallback" style="display:none;">
+    Unable to detect your device. Please download the app manually:<br>
+    <a href="https://play.google.com/store/apps/details?id=com.park.mywheels" target="_blank">Android (Google Play Store)</a><br>
+    <a href="https://apps.apple.com/in/app/parkmywheels/id6745809692" target="_blank">iOS (Apple App Store)</a>
+  </p>
+</body>
+</html>
