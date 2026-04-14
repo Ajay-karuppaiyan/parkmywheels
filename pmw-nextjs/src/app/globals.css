@@ -77,3 +77,22 @@
   background: #ddd !important;
   transform: translateY(-2px);
 }
+
+/* Placeholder color (all browsers) */
+.footer-enquiry-form .form-control::placeholder {
+  color: #ffffff !important;
+  opacity: 1;
+}
+
+/* For older browsers (extra support) */
+.footer-enquiry-form .form-control::-webkit-input-placeholder {
+  color: #ffffff !important;
+}
+
+.footer-enquiry-form .form-control:-ms-input-placeholder {
+  color: #ffffff !important;
+}
+
+.footer-enquiry-form .form-control::-ms-input-placeholder {
+  color: #ffffff !important;
+}

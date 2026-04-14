@@ -56,7 +56,7 @@ export default function RootLayout({
                   top: 0, 
                   left: 0, 
                   filter: 'brightness(0) invert(1)',
-                  clipPath: 'inset(8% 0 11% 0)' // ONLY middle visible
+                  clipPath: 'inset(9% 0 12% 0)' // ONLY middle visible
                 }} 
               />
             </div>

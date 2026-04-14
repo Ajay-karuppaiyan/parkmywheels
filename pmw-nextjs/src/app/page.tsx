@@ -371,11 +371,11 @@ export default function Home() {
              </div>
              <div className="client-slider mt-5">
                 <div className="swiper client_logo_slider">
-                   <div className="swiper-wrapper">
-                      {clientLogos.map((logo, i) => (
-                       <div className="swiper-slide" key={i}><div className="company-logo"><img src={`/images/${logo}`} alt="" className="img-fluid" style={{ opacity: 0.8, filter: 'brightness(0) invert(1)' }} /></div></div>
-                      ))}
-                   </div>
+                    <div className="swiper-wrapper" style={{ transitionTimingFunction: 'linear' }}>
+                       {[...clientLogos, ...clientLogos].map((logo, i) => (
+                        <div className="swiper-slide" key={i}><div className="company-logo"><img src={`/images/${logo}`} alt="" className="img-fluid" style={{ opacity: 0.8, filter: 'brightness(0) invert(1)' }} /></div></div>
+                       ))}
+                    </div>
                 </div>
              </div>
           </div>

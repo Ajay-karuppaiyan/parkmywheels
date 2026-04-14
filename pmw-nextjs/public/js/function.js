@@ -32,16 +32,21 @@
         }
 
         /* client logo slider JS */
-        if ($('.client_logo_slider').length) {
-            new Swiper(".client_logo_slider", {
+        $('.client_logo_slider').each(function() {
+            if (this.swiper) this.swiper.destroy();
+            new Swiper(this, {
                 slidesPerView: 2,
                 spaceBetween: 30,
                 loop: true,
-                speed: 1500,
-                autoplay: { delay: 3000 },
+                speed: 3000,
+                autoplay: {
+                    delay: 0,
+                    disableOnInteraction: false,
+                },
+                freeMode: true,
                 breakpoints: { 768: { slidesPerView: 4 }, 991: { slidesPerView: 6 } }
             });
-        }
+        });
 
         /* testimonial Slider JS */
         if ($('.testimonial-slider').length) {
