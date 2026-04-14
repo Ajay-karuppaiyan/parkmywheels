@@ -8,7 +8,7 @@ export default function Footer() {
           <div className="row">
             <div className="col-lg-3">
               <div className="about-footer">
-                <div className="footer-logo"><img src="/images/logo.svg" alt="" /></div>
+                <div className="footer-logo"><img src="/images/parkmywheels%20-%20TM%20logo%20-%20light.png" alt="" style={{ maxWidth: '160px' }} /></div>
                 <div className="about-footer-content">
                   <p>Experience the convenience and ease of parking a vehicle with ParkMyWheels.</p>
                 </div>

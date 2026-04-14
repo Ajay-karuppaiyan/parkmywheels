@@ -8,7 +8,7 @@ export default function Header() {
           <div className="container">
             {/* Logo Start */}
             <Link className="navbar-brand" href="/">
-              <img src="/images/logo.svg" alt="Logo" style={{ width: '50%' }} />
+              <img src="/images/parkmywheels%20-%20TM%20logo.png" alt="Logo" style={{ maxWidth: '120px' }} />
             </Link>
             {/* Logo End */}
 

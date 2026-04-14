@@ -155,7 +155,7 @@ export default function Home() {
             <div className="col-lg-6">
               <div className="about-content">
                 <div className="section-title">
-                  <img src="/images/logo.svg" alt="" /><br /><br />
+                  <img src="/images/parkmywheels%20-%20TM%20logo.png" alt="" style={{ maxWidth: '220px' }} /><br /><br />
                   <h2 className="text-anime-style-3" data-cursor="-opaque">Your trusted partner in reliable Parking Solutions</h2>
                   <h3 className="wow fadeInUp">about us</h3>
                   <p className="wow fadeInUp" data-wow-delay="0.25s">ParkMyWheels revolutionizes the way you park by offering a seamless pre-booking system. Avoid parking hassles, fines, and wasted time by reserving your spot in advance.</p>
@@ -389,9 +389,10 @@ export default function Home() {
             <div className="col-lg-12">
                <div className="section-title">
                   <h3 className="wow fadeInUp">why choose us</h3>
-<h2 className="text-anime-style-3 mx-auto max-w-2xl">
-  Unmatched quality and service for your parking needs
-</h2>               </div>
+                  <h2 className="text-anime-style-3 mx-auto max-w-2xl">
+                    Unmatched quality and service for your parking needs
+                  </h2>               
+               </div>
             </div>
           </div>
           <div className="row align-items-center">
