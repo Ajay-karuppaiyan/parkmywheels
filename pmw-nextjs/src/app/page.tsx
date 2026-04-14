@@ -14,7 +14,12 @@ export default function Home() {
     { q: "Is there a cancel and reschedule option for scheduled booking?", a: "Yes, you can cancel or reschedule your booking through the app, subject to availability and cancellation policies." },
     { q: "Can i subscribe for monthly parking?", a: "Absolutely! We offer convenient monthly subscription plans for regular parking needs." },
     { q: "How do I make a parking reservation?", a: "Simply use our app to browse locations, select a spot, and confirm your booking in just a few taps." },
-    { q: "Do I need to create an account to book a parking spot?", a: "Yes, creating an account allows you to manage bookings, track reservations, and access exclusive offers." }
+    { q: "Do I need to create an account to book a parking spot?", a: "Yes, creating an account allows you to manage bookings, track reservations, and access exclusive offers." },
+    { q: "Is my parking spot guaranteed once I book?", a: "Yes! Once booked, your parking spot is reserved and ready for you upon arrival." },
+    { q: "What payment methods are accepted?", a: "We accept various payment options, including credit/debit cards, UPI, and digital wallets for a seamless experience." },
+    { q: "Can I extend my parking duration?", a: "Yes, you can extend your parking time through the app, subject to availability and additional charges." },
+    { q: "Is there customer support if I face any issues?", a: "Absolutely! Our support team is available to assist you with any queries or concerns." },
+
   ];
 
   const rentalFaqs = [
@@ -24,8 +29,8 @@ export default function Home() {
     { id: 4, q: "User Responsibilities", a: "Users must adhere to the parking provider’s rules. Vehicles must be parked legally. ParkMyWheels is not liable for fines or towing charges." },
     { id: 5, q: "Changes and Cancellations", a: "Users may modify or cancel bookings as per the provider’s policy. We reserve the right to cancel in case of technical issues." },
     { id: 6, q: "Platform Use", a: "Users agree to use the platform responsibly. Misuse may result in account suspension." },
-    { id: 7, q: "Dispute Resolution", a: "disputes must be resolved directly between the user and the parking provider. ParkMyWheels may assist in communication." },
-    { id: 8, q: "Policy Updates", a: "ParkMyWheels reserves the right to update these policies at any time. Continued use constitutes acceptance." }
+    { id: 7, q: "Dispute Resolution", a: "Any disputes related to parking services must be resolved directly between the user and the parking provider. ParkMyWheels may assist in communication but is not responsible for resolutions." },
+    { id: 8, q: "Policy Updates", a: "ParkMyWheels reserves the right to update these policies at any time. Continued use of the platform constitutes acceptance of any changes. By using ParkMyWheels, you agree to these terms and acknowledge that we are solely a facilitator, not the provider of parking services." }
   ];
 
   const testimonials = [
@@ -258,7 +263,7 @@ export default function Home() {
                <div className="fleets-single-content">
                   <div className="fleets-single-slider mb-5">
                      <div className="swiper">
-                        <div className="swiper-wrapper">
+                         <div className="swiper-wrapper">
                            {[1,1,1,1].map((_, i) => (
                             <div className="swiper-slide" key={i}>
                                <div className="fleets-slider-image"><figure className="image-anime rounded overflow-hidden shadow"><img src="/images/fleets-slider-img-1.jpg" alt="" className="img-fluid" /></figure></div>
@@ -330,15 +335,15 @@ export default function Home() {
       <div className="intro-video bg-section parallaxie shadow py-5 text-center my-5">
         <div className="container py-5">
           <div className="section-title">
-             <h3 className="wow fadeInUp text-white">watch full video</h3>
-             <h2 className="text-anime-style-3 text-white mb-4">Discover the ease and convenience of Parking Smart</h2>
+             <h3 className="wow fadeInUp text-green">watch full video</h3>
+             <h2 className="text-anime-style-3 text-white mb-4">Discover the ease and convenience of Parking Smart with ParkMyWheels</h2>
           </div>
           <div className="intro-video-box position-relative">
              <div className="video-play-button mb-5">
                 <a href="https://www.youtube.com/watch?v=Y-x0efG1seA" className="popup-video btn-default" style={{ padding: '30px' }}><i className="fa-solid fa-play fa-2x"></i></a>
              </div>
              <div className="client-slider mt-5">
-                <div className="swiper">
+                <div className="swiper client_logo_slider">
                    <div className="swiper-wrapper">
                       {clientLogos.map((logo, i) => (
                        <div className="swiper-slide" key={i}><div className="company-logo"><img src={`/images/${logo}`} alt="" className="img-fluid" style={{ opacity: 0.8, filter: 'brightness(0) invert(1)' }} /></div></div>
@@ -357,8 +362,9 @@ export default function Home() {
             <div className="col-lg-12">
                <div className="section-title">
                   <h3 className="wow fadeInUp">why choose us</h3>
-                  <h2 className="text-anime-style-3">Unmatched quality and service for your parking needs</h2>
-               </div>
+<h2 className="text-anime-style-3 mx-auto max-w-2xl">
+  Unmatched quality and service for your parking needs
+</h2>               </div>
             </div>
           </div>
           <div className="row align-items-center">
@@ -372,7 +378,7 @@ export default function Home() {
                   <div className="why-choose-content"><h3>exceptional customer service</h3><p>Need help? Our friendly support team is always ready to assist you.</p></div>
                 </div>
              </div>
-             <div className="col-lg-4 d-none d-lg-block text-center order-lg-2"><figure className="reveal"><img src="/images/why-choose-img.jpg" alt="" className="img-fluid rounded shadow" /></figure></div>
+             <div className="col-lg-4 col-md-12 text-center order-lg-2 order-md-3 order-2"><div className="why-choose-image mb-4 mb-lg-0"><figure className="reveal"><img src="/images/why-choose-img.jpg" alt="" className="img-fluid rounded shadow" /></figure></div></div>
              <div className="col-lg-4 col-md-6 order-lg-3 order-md-2 order-3 text-start">
                 <div className="why-choose-item wow fadeInUp mb-5">
                   <div className="icon-box mb-3"><img src="/images/icon-why-choose-3.svg" alt="" /></div>
@@ -436,6 +442,78 @@ export default function Home() {
           </div>
         </div>
       </div>
+
+      {/* CTA Box Section Start */}
+      <div className="cta-box bg-section py-5 my-5">
+        <div className="container">
+          <div className="row align-items-center">
+            <div className="col-lg-6 col-md-7">
+              <div className="cta-box-content text-start">
+                <div className="section-title">
+                  <h2 className="text-anime-style-3 text-white">Ready to hit the road? Book your vehicle Parking today!</h2>
+                  <p className="wow fadeInUp text-white-50">Our friendly customer service team is here to help. Contact us anytime for support and inquiries.</p>
+                </div>
+                <div className="cta-box-btn wow fadeInUp" data-wow-delay="0.5s">
+                  <a href="/contact" className="btn-default">contact us</a>
+                </div>
+              </div>
+            </div>
+            <div className="col-lg-6 col-md-5">
+              <div className="cat-box-image text-center mt-4 mt-md-0">
+                <figure className="wow fadeInRight"><img src="/images/cta-car-img.png" alt="" className="img-fluid" /></figure>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      {/* CTA Box Section End */}
+
+      {/* Latest Article Start */}
+      <div className="latest-article py-5">
+        <div className="container">
+          <div className="row section-row text-center mb-5">
+            <div className="col-lg-12">
+              <div className="section-title">
+                <h3 className="wow fadeInUp">latest articles</h3>
+                <h2 className="text-anime-style-3">Stay informed and inspired for your next journey</h2>
+              </div>
+            </div>
+          </div>
+          <div className="row">
+            <div className="col-lg-6">
+              <div className="highlighted-article-post wow fadeInUp position-relative overflow-hidden rounded shadow mb-4 mb-lg-0">
+                <div className="highlighted-article-featured-img"><figure className="image-anime"><a href="#" className="image-anime"><img src="/images/post-1.jpg" alt="" className="img-fluid" /></a></figure></div>
+                <div className="highlighted-article-body position-absolute bottom-0 start-0 w-100 p-4 bg-dark bg-opacity-75 text-white">
+                  <div className="article-meta mb-2"><ul className="list-unstyled"><li><a href="#" className="text-white-50 small"><i className="fa-solid fa-calendar-days me-2"></i>sep 19, 2024</a></li></ul></div>
+                  <div className="highlighted-article-content d-flex justify-content-between align-items-end">
+                    <h3 className="h4 mb-0"><a href="#" className="text-white">Road Trip Essentials: What to Pack for a Smooth Journey</a></h3>
+                    <a href="#" className="section-icon-btn btn btn-light rounded-circle shadow-sm" style={{ width:'40px', height:'40px', padding:'10px' }}><img src="/images/arrow-orange.svg" alt="" style={{ width:'100%' }} /></a>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div className="col-lg-6">
+              {[
+                { date: "sep 20, 2024", title: "Exploring the City: Best Urban Destinations for a Weekend Getaway", img: "post-2.jpg", delay: "0s" },
+                { date: "sep 21, 2024", title: "Unlocking Adventure: The Best Off-Road Routes for Thrill-Seekers", img: "post-3.jpg", delay: "0.25s" },
+                { date: "sep 22, 2024", title: "The Ultimate Guide to Car Rentals: Tips for Your Next Road Trip", img: "post-4.jpg", delay: "0.5s" }
+              ].map((article, index) => (
+                <div className="article-post wow fadeInUp d-flex gap-3 mb-4 last-child-mb-0" data-wow-delay={article.delay} key={index}>
+                  <div className="article-featured-img" style={{ width:'120px', flexShrink:0 }}><figure className="image-anime rounded overflow-hidden"><a href="#"><img src={`/images/${article.img}`} alt="" className="img-fluid" /></a></figure></div>
+                  <div className="article-post-body flex-grow-1">
+                    <div className="article-meta mb-1"><ul className="list-unstyled"><li><a href="#" className="text-muted small"><i className="fa-solid fa-calendar-days me-2"></i>{article.date}</a></li></ul></div>
+                    <div className="article-post-content">
+                      <h3 className="h6"><a href="#" className="text-dark">{article.title}</a></h3>
+                      <a href="#" className="read-story-btn text-primary text-uppercase fw-bold small">read story</a>
+                    </div>
+                  </div>
+                </div>
+              ))}
+            </div>
+          </div>
+        </div>
+      </div>
+      {/* Latest Article End */}
 
       <Footer />
     </>
