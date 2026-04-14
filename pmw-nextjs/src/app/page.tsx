@@ -22,13 +22,31 @@ export default function Home() {
 
   ];
 
-  const rentalFaqs = [
+   const rentalFaqs = [
     { id: 1, q: "Service Scope", a: "ParkMyWheels is a technology platform that facilitates parking space reservations by connecting users with parking providers. We do not own, operate, or manage any parking locations." },
-    { id: 2, q: "Liability Disclaimer", a: "By using our platform, you acknowledge that ParkMyWheels is not responsible for the condition, safety, or security of the parking locations, or any damage, theft, loss, or personal injury occurring at the location." },
-    { id: 3, q: "Booking and Payments", a: "All bookings must be made through the ParkMyWheels platform. Payments are processed securely, and cancellations/refunds are subject to the provider's policies." },
-    { id: 4, q: "User Responsibilities", a: "Users must adhere to the parking provider’s rules. Vehicles must be parked legally. ParkMyWheels is not liable for fines or towing charges." },
-    { id: 5, q: "Changes and Cancellations", a: "Users may modify or cancel bookings as per the provider’s policy. We reserve the right to cancel in case of technical issues." },
-    { id: 6, q: "Platform Use", a: "Users agree to use the platform responsibly. Misuse may result in account suspension." },
+    { id: 2, q: "Liability Disclaimer", points: [
+      "The condition, safety, or security of the parking locations listed on our platform.",
+      "Any damage, theft, loss, or personal injury occurring at the parking location.",
+      "Any disputes or issues arising between users and parking space providers."
+    ], a: "By using our platform, you acknowledge that ParkMyWheels is not responsible for:" },
+    { id: 3, q: "Booking and Payments", points: [
+      "All bookings must be made through the ParkMyWheels platform.",
+      "Payments are processed securely through our app, and users are responsible for any applicable charges.",
+      "Cancellations and refunds are subject to the specific policies of the parking provider."
+    ] },
+    { id: 4, q: "User Responsibilities", points: [
+      "Users must adhere to the parking provider’s rules and regulations.",
+      "Vehicles must be parked legally and within designated areas.",
+      "ParkMyWheels is not liable for any fines, penalties, or towing charges incurred by the user."
+    ] },
+    { id: 5, q: "Changes and Cancellations", points: [
+      "Users may modify or cancel bookings as per the provider’s cancellation policy.",
+      "ParkMyWheels reserves the right to modify or cancel bookings in cases of technical issues or unforeseen circumstances."
+    ] },
+    { id: 6, q: "Platform Use", points: [
+      "Users agree to use the platform responsibly and not engage in fraudulent activities.",
+      "Misuse of the platform may result in account suspension or termination."
+    ] },
     { id: 7, q: "Dispute Resolution", a: "Any disputes related to parking services must be resolved directly between the user and the parking provider. ParkMyWheels may assist in communication but is not responsible for resolutions." },
     { id: 8, q: "Policy Updates", a: "ParkMyWheels reserves the right to update these policies at any time. Continued use of the platform constitutes acceptance of any changes. By using ParkMyWheels, you agree to these terms and acknowledge that we are solely a facilitator, not the provider of parking services." }
   ];
@@ -320,7 +338,16 @@ export default function Home() {
                         {rentalFaqs.map((f, i) => (
                            <div className="accordion-item wow fadeInUp" key={i}>
                               <h2 className="accordion-header"><button className={`accordion-button ${i===0?'':'collapsed'}`} type="button" data-bs-toggle="collapse" data-bs-target={`#rentalcollapse${f.id}`}>{f.q}</button></h2>
-                              <div id={`rentalcollapse${f.id}`} className={`accordion-collapse collapse ${i===0?'show':''}`} data-bs-parent="#rentalaccordion"><div className="accordion-body"><p>{f.a}</p></div></div>
+                              <div id={`rentalcollapse${f.id}`} className={`accordion-collapse collapse ${i===0?'show':''}`} data-bs-parent="#rentalaccordion">
+                                <div className="accordion-body text-start">
+                                  {f.a && <p>{f.a}</p>}
+                                  {f.points && (
+                                    <ul className="mb-0">
+                                      {f.points.map((p, idx) => <li key={idx}>{p}</li>)}
+                                    </ul>
+                                  )}
+                                </div>
+                              </div>
                            </div>
                         ))}
                      </div>
@@ -368,13 +395,13 @@ export default function Home() {
             </div>
           </div>
           <div className="row align-items-center">
-             <div className="col-lg-4 col-md-6 order-lg-1 order-md-1 order-1 text-end">
+             <div className="col-lg-4 col-md-6 order-lg-1 order-md-1 order-1 text-lg-end text-start">
                 <div className="why-choose-item wow fadeInUp mb-5">
-                  <div className="icon-box ms-auto mb-3"><img src="/images/icon-why-choose-1.svg" alt="" /></div>
+                  <div className="icon-box ms-lg-auto ms-0 mb-3"><img src="/images/icon-why-choose-1.svg" alt="" /></div>
                   <div className="why-choose-content"><h3>extensive parking options</h3><p>From private lots to commercial hubs, we offer a wide range of parking choices.</p></div>
                 </div>
                 <div className="why-choose-item wow fadeInUp" data-wow-delay="0.25s">
-                  <div className="icon-box ms-auto mb-3"><img src="/images/icon-why-choose-2.svg" alt="" /></div>
+                  <div className="icon-box ms-lg-auto ms-0 mb-3"><img src="/images/icon-why-choose-2.svg" alt="" /></div>
                   <div className="why-choose-content"><h3>exceptional customer service</h3><p>Need help? Our friendly support team is always ready to assist you.</p></div>
                 </div>
              </div>
@@ -504,7 +531,7 @@ export default function Home() {
                     <div className="article-meta mb-1"><ul className="list-unstyled"><li><a href="#" className="text-muted small"><i className="fa-solid fa-calendar-days me-2"></i>{article.date}</a></li></ul></div>
                     <div className="article-post-content">
                       <h3 className="h6"><a href="#" className="text-dark">{article.title}</a></h3>
-                      <a href="#" className="read-story-btn text-primary text-uppercase fw-bold small">read story</a>
+                      <a href="#" className="read-story-btn text-success fw-bold small">Read story</a>
                     </div>
                   </div>
                 </div>
