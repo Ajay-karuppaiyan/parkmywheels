@@ -64,7 +64,7 @@ export default function PrivacyPolicy() {
         <h3 style={{ color: '#3ba775', marginTop: '30px' }}>5. Data Sharing and Disclosure</h3><hr />
         <p style={{ textAlign: 'justify' }}>We do not sell your data. We share with Service Providers (payment processors), for Legal Compliance, or Business Transfers.</p>
 
-        <h3 style={{ color: '#3ba775', marginTop: '30px' }}>16. LIMITATION OF LIABILITY</h3><hr />
+        <h3 style={{ color: '#3ba775', marginTop: '30px' }}>6. LIMITATION OF LIABILITY</h3><hr />
         <p style={{ textAlign: 'justify' }}>Parkmywheels shall not be liable for any damages resulting from the use of, or inability to use, the Website/Application, including damages caused by malware, viruses or any incorrectness or incompleteness of the information.</p>
 
         <div style={{ textAlign: 'right', marginTop: '40px' }}>

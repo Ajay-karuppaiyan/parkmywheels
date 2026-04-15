@@ -36,27 +36,13 @@ export default function RootLayout({
         <div className="preloader">
           <div className="loading-container">
             <div className="loading"></div>
-            <div id="loading-icon" style={{ position: 'relative', width: '160px', height: 'auto' }}>
-              {/* Black version (base layer for TM and tagline) */}
+            <div id="loading-icon" style={{ textAlign: 'center' }}>
               <img 
-                src="/images/parkmywheels%20-%20TM%20logo.png" 
-                alt="" 
+                src="/images/loader-logo.png" 
+                alt="Loading..." 
                 style={{ 
-                  maxWidth: '160px', 
-                  filter: 'brightness(0)' 
-                }} 
-              />
-              {/* White version (Middle part only) overlay */}
-              <img 
-                src="/images/parkmywheels%20-%20TM%20logo.png" 
-                alt="" 
-                style={{ 
-                  maxWidth: '160px', 
-                  position: 'absolute', 
-                  top: 0, 
-                  left: 0, 
-                  filter: 'brightness(0) invert(1)',
-                  clipPath: 'inset(9% 0 12% 0)' // ONLY middle visible
+                  maxWidth: '160px',
+                  height: 'auto'
                 }} 
               />
             </div>

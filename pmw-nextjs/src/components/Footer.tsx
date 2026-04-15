@@ -32,7 +32,7 @@ export default function Footer() {
                 <li className="mb-2"><Link href="/about" className="text-white text-decoration-none">About Us</Link></li>
                 <li className="mb-2"><Link href="/services" className="text-white text-decoration-none">Services</Link></li>
                 <li className="mb-2"><Link href="/services" className="text-white text-decoration-none">Explore Parking</Link></li>
-                <li className="mb-2"><Link href="#" className="text-white text-decoration-none">Login / Register</Link></li>
+                <li className="mb-2"><Link href="/login" className="text-white text-decoration-none">Login / Register</Link></li>
                 <li className="mb-2"><Link href="/contact" className="text-white text-decoration-none">Contact Us</Link></li>
                 <li className="mb-2"><Link href="/blogs" className="text-white text-decoration-none">Blogs & Posts</Link></li>
                 <li className="mb-2"><Link href="/terms-and-conditions" className="text-white text-decoration-none">Terms & Conditions</Link></li>
@@ -52,11 +52,11 @@ export default function Footer() {
                 <li className="mb-2"><Link href="/valet-parking" className="text-white text-decoration-none">Valet Parking</Link></li>
                 <li className="mb-2"><Link href="/rent-park-and-earn" className="text-white text-decoration-none">Rent & Earn Home Parking</Link></li>
                 <li className="mb-2"><Link href="/parking-business" className="text-white text-decoration-none">Parking Business</Link></li>
-                <li className="mb-2"><Link href="/services" className="text-white text-decoration-none">Commercial Parking</Link></li>
-                <li className="mb-2"><Link href="/services" className="text-white text-decoration-none">Corporate Parking</Link></li>
-                <li className="mb-2"><Link href="/services" className="text-white text-decoration-none">NRI Parking</Link></li>
-                <li className="mb-2"><Link href="/services" className="text-white text-decoration-none">VIP / Premium Parking</Link></li>
-                <li className="mb-2"><Link href="/services" className="text-white text-decoration-none">Parking Management Resources</Link></li>
+                <li className="mb-2"><Link href="/commercial-parking" className="text-white text-decoration-none">Commercial Parking</Link></li>
+                <li className="mb-2"><Link href="/corporate-parking" className="text-white text-decoration-none">Corporate Parking</Link></li>
+                <li className="mb-2"><Link href="/nri-parking" className="text-white text-decoration-none">NRI Parking</Link></li>
+                <li className="mb-2"><Link href="/vip-parking" className="text-white text-decoration-none">VIP / Premium Parking</Link></li>
+                <li className="mb-2"><Link href="/parking-management" className="text-white text-decoration-none">Parking Management Resources</Link></li>
               </ul>
             </div>
 
@@ -64,11 +64,11 @@ export default function Footer() {
             <div className="col-lg-3 col-md-6 mb-4">
               <h3 className="h5 mb-4 text-white">Smart Apps for Smart Parking</h3>
               <div className="app-download-btns mb-4">
-                <a href="#" className="btn-default btn-no-arrow d-flex align-items-center mb-2 py-2 px-3 small" style={{ background: '#000' }}>
-                  <i className="fa-brands fa-google-play me-2"></i> Play Store
+                <a href="https://play.google.com/store/apps/details?id=com.park.mywheels" target="_blank" className="d-inline-block mb-3">
+                  <img src="/images/google-play-logo.png" alt="Get it on Google Play" style={{ height: '45px' }} />
                 </a>
-                <a href="https://apps.apple.com/in/app/parkmywheels/id6745809692" target="_blank" className="btn-default btn-no-arrow d-flex align-items-center py-2 px-3 small" style={{ background: '#000' }}>
-                  <img src="/images/apple.svg" alt="" width="20" className="me-2" style={{ filter: 'invert(1)' }} /> App Store
+                <a href="https://apps.apple.com/in/app/parkmywheels/id6745809692" target="_blank" className="d-inline-block">
+                  <img src="/images/app-store-logo.png" alt="Download on the App Store" style={{ height: '45px' }} />
                 </a>
               </div>
 

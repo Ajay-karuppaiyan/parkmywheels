@@ -25,7 +25,7 @@ export default function Blogs() {
                 <div className="p-4">
                   <span className="text-green small">{post.date}</span>
                   <h3 className="h5 mt-2">{post.title}</h3>
-                  <a href="#" className="btn-default mt-3 py-2 px-4 d-inline-block">Read More</a>
+                  <a href="#" className="btn-default mt-3 py-3 px-4 d-inline-block">Read More</a>
                 </div>
               </div>
             </div>

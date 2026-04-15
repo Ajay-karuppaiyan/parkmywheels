@@ -49,7 +49,7 @@ export default function TermsAndConditions() {
         <h3 style={{ color: '#3ba775', marginTop: '30px' }}>4. Data Sharing and Disclosure</h3><hr />
         <p style={{ textAlign: 'justify' }}>We may share data with trusted Third-Party Service Providers (e.g., payment processors) under confidentiality agreements, or for Legal Compliance, or during Business Transfers.</p>
 
-        <h3 style={{ color: '#3ba775', marginTop: '30px' }}>13. Governing Law and Dispute Resolution</h3><hr />
+        <h3 style={{ color: '#3ba775', marginTop: '30px' }}>5. Governing Law and Dispute Resolution</h3><hr />
         <p style={{ textAlign: 'justify' }}>The courts of Bengaluru, India shall have the sole and exclusive jurisdiction in respect of any matters arising from the use of the Services offered by Parkmywheels.</p>
 
         <div style={{ textAlign: 'right', marginTop: '40px' }}>
