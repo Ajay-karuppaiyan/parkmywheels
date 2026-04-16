@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import Script from "next/script";
 import "./globals.css";
 import ScriptsHandler from "@/components/ScriptsHandler";
+import FloatingContactMenu from "@/components/FloatingContactMenu";
 
 export const metadata: Metadata = {
   title: "ParkMyWheels - Smart Parking Management Solutions",
@@ -49,6 +50,7 @@ export default function RootLayout({
           </div>
         </div>
         
+        <FloatingContactMenu />
         {children}
         <ScriptsHandler />
 
