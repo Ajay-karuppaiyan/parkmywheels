@@ -10,7 +10,7 @@ const FloatingContactMenu = () => {
     <div className={`sticky-elements-container ${isOpen ? 'is-open' : 'is-closed'}`}>
       {/* Minimize Arrow Tab */}
       <div className="sticky-item minimize-tab" onClick={() => setIsOpen(!isOpen)}>
-        <div className="sticky-btn minimize-btn" style={{ backgroundColor: '#ec0875' }}>
+        <div className="sticky-btn minimize-btn" style={{ backgroundColor: '#000000' }}>
           <span style={{ fontSize: '20px', fontWeight: 'bold' }}>{isOpen ? '→' : '←'}</span>
         </div>
       </div>
@@ -19,7 +19,7 @@ const FloatingContactMenu = () => {
         {/* Enquire Now Tab */}
 
       <div className="sticky-item enquire-tab">
-        <div className="sticky-btn" style={{ backgroundColor: '#006cb6', color: '#FFFFFF' }}>
+        <div className="sticky-btn" style={{ backgroundColor: '#26D367', color: '#FFFFFF' }}>
           <i className="far fa-envelope"></i>
           <span className="vertical-text">Enquire Now</span>
         </div>
@@ -51,10 +51,10 @@ const FloatingContactMenu = () => {
 
       {/* Phone/Contact Icon */}
       <a href="tel:+910000000000" className="sticky-item icon-item">
-        <div className="sticky-btn icon-only" style={{ backgroundColor: '#ec0875' }}>
+        <div className="sticky-btn icon-only" style={{ backgroundColor: '#26D367' }}>
           <i className="fa fa-phone"></i>
         </div>
-        <div className="sticky-hover-text" style={{ backgroundColor: '#ec0875' }}>
+        <div className="sticky-hover-text" style={{ backgroundColor: '#26D367' }}>
           Phone
         </div>
       </a>
