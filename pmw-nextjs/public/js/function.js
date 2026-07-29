@@ -44,7 +44,7 @@
                     disableOnInteraction: false,
                 },
                 freeMode: true,
-                breakpoints: { 768: { slidesPerView: 4 }, 991: { slidesPerView: 6 } }
+                breakpoints: { 768: { slidesPerView: 4 }, 991: { slidesPerView: 4 } }
             });
         });
 

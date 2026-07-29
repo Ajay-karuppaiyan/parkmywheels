@@ -72,7 +72,7 @@ export default function RootLayout({
         <Script src="/js/ScrollTrigger.min.js" strategy="afterInteractive" />
         <Script src="/js/jquery.mb.YTPlayer.min.js" strategy="afterInteractive" />
         <Script src="/js/wow.js" strategy="afterInteractive" />
-        <Script src="/js/function.js" strategy="afterInteractive" />
+        <Script src="/js/function.js?v=2" strategy="afterInteractive" />
       </body>
     </html>
   );
