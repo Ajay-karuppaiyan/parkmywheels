@@ -265,7 +265,7 @@ export default function Home() {
       <div className="page-fleets-single py-5">
         <div className="container">
           <div className="row">
-            <div className="col-lg-4">
+            <div className="col-lg-3">
               <div className="fleets-single-sidebar shadow">
                 <div className="fleets-single-sidebar-box wow fadeInUp">
                   <div className="fleets-single-sidebar-pricing"><h2><span>Starts from</span> ₹20<span> per hour</span></h2></div>
@@ -287,7 +287,7 @@ export default function Home() {
                 </div>
               </div>
             </div>
-            <div className="col-lg-8">
+            <div className="col-lg-9">
               <div className="fleets-single-content">
                 <div className="fleets-single-slider mb-5">
                   <div className="swiper">
@@ -385,7 +385,7 @@ export default function Home() {
                   {clientLogos.map((logo, i) => (
                     <div className="swiper-slide" key={i} style={{ width: 'auto' }}>
                       <div className="company-logo d-flex justify-content-center align-items-center">
-                        <img src={`/images/${logo}`} alt="" style={{ opacity: 0.8, height: '120px', width: 'auto', objectFit: 'contain' }} />
+                        <img src={`/images/${logo}`} alt="" style={{ opacity: 0.9, height: '120px', width: '120px', objectFit: 'contain', borderRadius: '20px', backgroundColor: '#fff', padding: '10px' }} />
                       </div>
                     </div>
                   ))}

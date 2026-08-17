@@ -3300,19 +3300,19 @@ header.main-header .header-sticky.active{
 	top: 20px;
 	background-color: var(--secondary-color);
 	border-radius: 30px;
-	padding: 40px;
-	margin-right: 30px;
+	padding: 25px;
+	margin-right: 20px;
 }
 
 .fleets-single-sidebar-pricing{
 	border-bottom: 1px solid var(--divider-color);
-	margin-bottom: 25px;
-	padding-bottom: 25px;
+	margin-bottom: 15px;
+	padding-bottom: 15px;
 }
 
 .fleets-single-sidebar-pricing h2{
 	font-family: var(--default-font);
-    font-size: 50px;
+    font-size: 40px;
 }
 
 .fleets-single-sidebar-pricing h2 span{
@@ -3323,8 +3323,8 @@ header.main-header .header-sticky.active{
 
 .fleets-single-sidebar-list{
 	border-bottom: 1px solid var(--divider-color);
-	margin-bottom: 25px;
-	padding-bottom: 25px;
+	margin-bottom: 15px;
+	padding-bottom: 15px;
 }
 
 .fleets-single-sidebar-list ul{
@@ -3339,7 +3339,7 @@ header.main-header .header-sticky.active{
 	font-weight: 500;
 	color: var(--primary-color);
     padding-left: 40px;
-	margin-bottom: 25px;
+	margin-bottom: 15px;
 }
 
 .fleets-single-sidebar-list ul li span{
