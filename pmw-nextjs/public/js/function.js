@@ -35,16 +35,16 @@
         $('.client_logo_slider').each(function() {
             if (this.swiper) this.swiper.destroy();
             new Swiper(this, {
-                slidesPerView: 2,
-                spaceBetween: 30,
+                slidesPerView: 'auto',
+                spaceBetween: 40,
                 loop: true,
                 speed: 3000,
+                loopedSlides: 10, 
                 autoplay: {
                     delay: 0,
                     disableOnInteraction: false,
                 },
                 freeMode: true,
-                breakpoints: { 768: { slidesPerView: 4 }, 991: { slidesPerView: 4 } }
             });
         });
 

@@ -69,7 +69,7 @@ export default function Home() {
     { name: "Sandeep Thakur,", role: "Admin Head at Visionary Enterprises", text: "“We implemented ParkMyWheels for our office parking, and it has solved so many issues. Employees can now book in advance, and it’s been a great experience!”", img: "author-4.jpg" }
   ];
 
-  const clientLogos = ["logo-1.png", "logo-2.png", "logo-3.png", "logo-4.png", "logo-5.png", "logo-6.png", "logo-7.png", "logo-8.jpeg", "logo-9.jpeg", "logo-10.jpeg"];
+  const clientLogos = ["logo-1.png", "logo-2.png", "logo-4.png", "logo-5.png", "logo-6.png", "logo-7.png", "logo-8.jpeg", "logo-9.jpeg", "logo-10.jpeg"];
 
   return (
     <>
@@ -382,8 +382,12 @@ export default function Home() {
             <div className="client-slider mt-5">
               <div className="swiper client_logo_slider">
                 <div className="swiper-wrapper" style={{ transitionTimingFunction: 'linear' }}>
-                  {[...clientLogos, ...clientLogos].map((logo, i) => (
-                    <div className="swiper-slide" key={i}><div className="company-logo d-flex justify-content-center align-items-center"><img src={`/images/${logo}`} alt="" className="img-fluid" style={{ opacity: 0.8, width: '300px', maxHeight: '140px', objectFit: 'contain', transform: 'scale(1.8)' }} /></div></div>
+                  {clientLogos.map((logo, i) => (
+                    <div className="swiper-slide" key={i} style={{ width: 'auto' }}>
+                      <div className="company-logo d-flex justify-content-center align-items-center">
+                        <img src={`/images/${logo}`} alt="" style={{ opacity: 0.8, height: '120px', width: 'auto', objectFit: 'contain' }} />
+                      </div>
+                    </div>
                   ))}
                 </div>
               </div>
